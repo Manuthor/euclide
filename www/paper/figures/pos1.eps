@@ -1,0 +1,187 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: (ImageMagick)
+%%Title: (./pos1.png.eps)
+%%CreationDate: (2018-12-21T20:15:00+01:00)
+%%BoundingBox: -0 -0 452 221
+%%HiResBoundingBox: 0 0 452 221
+%%LanguageLevel: 2
+%%Pages: 1
+%%EndComments
+
+%%BeginDefaults
+%%EndDefaults
+
+%%BeginProlog
+%
+% Display a color image.  The image is displayed in color on
+% Postscript viewers or printers that support color, otherwise
+% it is displayed as grayscale.
+%
+/DirectClassImage
+{
+  %
+  % Display a DirectClass image.
+  %
+  colorspace 0 eq
+  {
+    /DeviceRGB setcolorspace
+    <<
+      /ImageType 1
+      /Width columns
+      /Height rows
+      /BitsPerComponent 8
+      /Decode [0 1 0 1 0 1]
+      /ImageMatrix [columns 0 0 rows neg 0 rows]
+      compression 0 gt
+      { /DataSource pixel_stream /RunLengthDecode filter }
+      { /DataSource pixel_stream /RunLengthDecode filter } ifelse
+    >> image
+  }
+  {
+    /DeviceCMYK setcolorspace
+    <<
+      /ImageType 1
+      /Width columns
+      /Height rows
+      /BitsPerComponent 8
+      /Decode [1 0 1 0 1 0 1 0]
+      /ImageMatrix [columns 0 0 rows neg 0 rows]
+      compression 0 gt
+      { /DataSource pixel_stream /RunLengthDecode filter }
+      { /DataSource pixel_stream /RunLengthDecode filter } ifelse
+    >> image
+  } ifelse
+} bind def
+
+/PseudoClassImage
+{
+  %
+  % Display a PseudoClass image.
+  %
+  % Parameters:
+  %   colors: number of colors in the colormap.
+  %
+  currentfile buffer readline pop
+  token pop /colors exch def pop
+  colors 0 eq
+  {
+    %
+    % Image is grayscale.
+    %
+    currentfile buffer readline pop
+    token pop /bits exch def pop
+    /DeviceGray setcolorspace
+    <<
+      /ImageType 1
+      /Width columns
+      /Height rows
+      /BitsPerComponent bits
+      /Decode [0 1]
+      /ImageMatrix [columns 0 0 rows neg 0 rows]
+      compression 0 gt
+      { /DataSource pixel_stream /RunLengthDecode filter }
+      {
+        /DataSource pixel_stream /RunLengthDecode filter
+        <<
+           /K -1
+           /Columns columns
+           /Rows rows
+        >> /CCITTFaxDecode filter
+      } ifelse
+    >> image
+  }
+  {
+    %
+    % Parameters:
+    %   colormap: red, green, blue color packets.
+    %
+    /colormap colors 3 mul string def
+    currentfile colormap readhexstring pop pop
+    currentfile buffer readline pop
+    [ /Indexed /DeviceRGB colors 1 sub colormap ] setcolorspace
+    <<
+      /ImageType 1
+      /Width columns
+      /Height rows
+      /BitsPerComponent 8
+      /Decode [0 255]
+      /ImageMatrix [columns 0 0 rows neg 0 rows]
+      compression 0 gt
+      { /DataSource pixel_stream /RunLengthDecode filter }
+      { /DataSource pixel_stream /RunLengthDecode filter } ifelse
+    >> image
+  } ifelse
+} bind def
+
+/DisplayImage
+{
+  %
+  % Display a DirectClass or PseudoClass image.
+  %
+  % Parameters:
+  %   x & y translation.
+  %   x & y scale.
+  %   label pointsize.
+  %   image label.
+  %   image columns & rows.
+  %   class: 0-DirectClass or 1-PseudoClass.
+  %   colorspace: 0-RGB or 1-CMYK.
+  %   compression: 0-RLECompression or 1-NoCompression.
+  %   hex color packets.
+  %
+  gsave
+  /buffer 512 string def
+  /pixel_stream currentfile def
+
+  currentfile buffer readline pop
+  token pop /x exch def
+  token pop /y exch def pop
+  x y translate
+  currentfile buffer readline pop
+  token pop /x exch def
+  token pop /y exch def pop
+  currentfile buffer readline pop
+  token pop /pointsize exch def pop
+  x y scale
+  currentfile buffer readline pop
+  token pop /columns exch def
+  token pop /rows exch def pop
+  currentfile buffer readline pop
+  token pop /class exch def pop
+  currentfile buffer readline pop
+  token pop /colorspace exch def pop
+  currentfile buffer readline pop
+  token pop /compression exch def pop
+  class 0 gt { PseudoClassImage } { DirectClassImage } ifelse
+  grestore
+} bind def
+%%EndProlog
+%%Page:  1 1
+%%PageBoundingBox: 0 0 452 221
+userdict begin
+%%BeginData:        98458 Binary Bytes
+DisplayImage
+0 0
+452.4 221.04
+12
+1885 921
+0
+0
+0
+‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÃÿ° ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿ§ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ™ÿ¡ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿž ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ› ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¥ÿ˜ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¨ÿé ãÿË ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ«ÿé ÑÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ«ÿé Ëÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ®ÿé Èÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ®ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ›ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¶ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ›ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¶ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ›ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¶ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿžÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¹ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿžÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¹ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿÔ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¼ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿÔ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¼ÿé Åÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿÔ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¼ÿé Èÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¤ÿÎ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿé Ëÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿé þÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿé ÑÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿé þÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿé àÿÑ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿæ þÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÂÿ› ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿžÿé øÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÂÿ¡ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ›ÿæ øÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿ§ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ•ÿé òÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿ¡ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ›ÿé òÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿž ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¡ÿæ òÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÈÿ˜ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ§ÿé ìÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÈÿé àÿÎ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ­ÿæ ìÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿËÿé ÎÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ°ÿæ ìÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿËÿé Èÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ°ÿé æÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿËÿé Åÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¶ÿæ æÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÎÿé Âÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¶ÿæ æÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÎÿé Âÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¹ÿé àÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÎÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¼ÿæ àÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÑÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¼ÿé Úÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÑÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿæ Úÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÔÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿæ Úÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÔÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿé Ôÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÔÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÂÿæ Ôÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ×ÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÂÿæ Ôÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ×ÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿæ Îÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÚÿé ¿ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿæ Îÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÚÿé Âÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿé Èÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÚÿé Âÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÈÿæ Èÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÝÿé Åÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÈÿ’ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÝÿé Èÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿ’ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÝÿé ÎÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÈÿŒ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿé àÿË ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿŒ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿ• ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿ† ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿãÿ˜ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÂÿ† ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿãÿ› ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿé ¶ÿé ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿãÿž ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿæ ¶ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿæÿ¤ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¹ÿæ ¶ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿæÿ­ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ³ÿæ °ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÆÿæ °ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÆÿæ °ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÉÿæ ªÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÌÿæ ªÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÏÿã §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¬ÿì ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ½ÿæ ¤ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ²ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÃÿæ ¤ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÜÿ³ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÉÿæ žÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ­ÿ‚ ‚ â ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÌÿæ žÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ÷ÿ‚ ‚ ‚ ˜ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÌÿæ žÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿ‚ ‚ ‚ ‚ ‚ Ç ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÆÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ù ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‘ÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ¯ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÞÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ á ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¬ÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ” ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿöÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ É ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÄÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ û ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿùÿì ‚ÿ‚ÿ¯ÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ± ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿà ‚ÿÿÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ æ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ Ã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ Ë žÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ™ ‚ÿ‚ÿÐÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ã ‚ÿ‚ÿ‚ÿƒÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ® ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¸ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ û ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿêÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ É ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ” ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÒÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ á ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ…ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿ‚ ‚ ‚ ‚ ‚ ¯ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ·ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿ‚ ‚ ‚ ‚ ü ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿ‚ ‚ Ê ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿ› ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÑÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿùÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿùÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿùÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ’ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŒÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‡ÿþBì@û?ø@þAþ@þ?þ@‚ÿ«ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ–ÿþ@þBþ?Ë@þ?û@‚ÿ´ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿœÿþD°@þI‚ÿ½ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿþU§@þ?þI‚ÿÃÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¥ÿþAþ?¡@þA‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¨ÿþ@þ?›@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ«ÿþ?Ú@þAþ@þ?þ@þ;þUþMþ=þCþAÚ@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ®ÿþAà@þ?þ<ÚÿþUþ?þAþ?ì@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ±ÿà@þAÈÿé@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ´ÿþAþ?ã@¿ÿþ=þ@þ?ø@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ·ÿæ@þ?þ@³ÿõ@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ·ÿæ@þ?­ÿþ<û@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿºÿþAæ@§ÿþUþ@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿ° ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ°ÿþ æ@þU‚ÿ‚ÿåÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿ¤ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¼ÿæ@þC‚ÿ‚ÿâÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿ› ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿþ?é@‚ÿ‚ÿßÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿ• ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÎÿþ>þ?é@‚ÿ‚ÿßÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÔÿþ?é@‚ÿ‚ÿÜÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿ˜@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿèÿŒ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ×ÿþ?ì@þA‚ÿ‚ÿÜÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿ˜@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿèÿé æÿ¼ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÝÿþIé@þB‚ÿ‚ÿÜÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿ˜@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿèÿé ÎÿÑ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿé@þ?‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿ˜@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿèÿé Åÿ× ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿãÿé@þ?‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿ˜@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿèÿé ¿ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿæÿþAì@þA‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿ˜@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿèÿé ¹ÿÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿéÿé@þA‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ¶ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿéÿþ?ì@þ?‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ³ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿæ@‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé °ÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿé@þI‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ­ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿé@þI‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ­ÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿé@þ ‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ªÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿé@þI‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ªÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿé@þI‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ªÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿæ@‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿþ?é@‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿþ?ì@þA‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÚ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿé@þ?‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ c  d  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  	c  c  c  @Ü ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿæ@‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  KÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿþ?é@‚ÿ‚ÿÙÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  PÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿòÿþIþ?ì@þE‚ÿ‚ÿÜÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿé@þ?‚ÿ‚ÿÜÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ e  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿþAé@‚ÿ‚ÿÜÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ c  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿ›@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿåÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿþDþ?ï@þ?þC‚ÿ‚ÿßÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿ›@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿåÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿé@þ?‚ÿ‚ÿßÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿ›@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿåÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿþAæ@‚ÿ‚ÿâÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿ›@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿåÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿìÿþ æ@þ€‚ÿ‚ÿåÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  UÜ ãÿ›@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿåÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿéÿþ?æ@§ÿþUþ@‚ÿÆÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ~ d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  \Ü ãÿ›@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿåÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿæÿæ@þ?­ÿø@‚ÿÆÿÜ ~  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c  c	  c  c  e ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿæÿþ=þ?æ@³ÿþAø@‚ÿÆÿÜ ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  e ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿãÿþ?ã@þU¿ÿû@þ?ø@‚ÿÆÿÜ ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  e  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé §ÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿàÿà@þAÈÿþGì@‚ÿÆÿÜ ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ªÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÝÿþAÝ@þDÚÿþ€þ?þAé@‚ÿÆÿÜ ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ªÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ×ÿþAà@þ?û@ûAþCþ@þ€þ@þCþ>û?Ý@‚ÿÆÿÜ ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ªÿæ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÔÿþ?˜@‚ÿÆÿÜ ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  dÜ ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ­ÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÑÿþ>¡@þ?þA‚ÿÃÿß ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé °ÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿËÿ§@û?þ3‚ÿÀÿß ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé °ÿã ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÅÿ­@þ3‚ÿºÿß ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ³ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¿ÿø@þ?Î@þ?û@‚ÿ±ÿß ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ¶ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ°ÿþ>û?þ@û?þ@û?õ@þ?þAþBþM‚ÿ¨ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ¹ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ e  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ¿ÿÚ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé Åÿ× ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  d  e  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  
+ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé ÎÿÑ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿšÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  d  e  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿé æÿ¼ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  d  e  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿŒ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ”ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  d  e  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‘ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ d  d  d  e  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  ß ãÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ• ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‹ÿß ~	  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ h  d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  Ü æÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ› ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ…ÿß ~  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ h  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  Ü æÿé@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿ¤ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿûÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ h  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  Ü æÿ•@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿëÿ° ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿïÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ h  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  Ü æÿ•@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿˆÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ h  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  Ü æÿ•@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿˆÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ h  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d   Ü æÿ•@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿˆÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¢ÿ~ `  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d   Ü æÿ•@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿˆÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d   Ü æÿ•@‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿˆÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d   Ü ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d   Ü ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ ÿì ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿöÿÜ ~d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d   Ü ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¦ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÜ ~X  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d   Ü ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÐÿ³ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ d  d  c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  &Ü ‚ÿ‚ÿ‚ÿ˜ÿ‚ ‚ è ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  -Ü ‚ÿ‚ÿâÿ‚ ‚ ‚ ž ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  	d  d  d  -Ü ­ÿ‚ ‚ ‚ ‚ ‚ Ð ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ~ c  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  b  U  U  U  U  U  U  U  U  J  G  G  G  A  <  <  <  8  1  1  1  0  *  	*  *  *  ‚ ‚ ‚ ‚ ‚ ‚ Ö ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ­ÿ‚ ò !  
+                    ‘ þ
+þþ‚ ‚ ‚ ‚ ‚ ‚ é ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ÷ÿ‚ ‚ ‚ › þþ:ø@þ5þ‚ ‚ ‚ ‚ ‚ ‚ ï ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÂÿ‚ ‚ ‚ ‚ ‚ Ó þ+ì@þ#‚ ‚ ‚ ‚ ‚ ‚ ò ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~S  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŠÿ‚ ‚ ‚ ‚ ‚ ‚  þæ@þ‚ ‚ ‚ ‚ ‚ ‚ õ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~R  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÔÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ Ä þ=æ@þ7‚ ‚ ‚ ‚ ‚ ‚ õ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ†ÿÜ ~E  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿŸÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ü þà@þ‚ ‚ ‚ ‚ ‚ ‚ û ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿÜ ~E  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿæÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ µ þà@þ‚ ‚ ‚ ‚ ‚ ‚ û ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿÜ ~E  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿ‚ÿ±ÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ê þà@þ‚ ‚ ‚ ‚ ‚ ‚ þ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿÜ ~E  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿ‚ÿ‚ÿûÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚   þþ?æ@þ8‚ ‚ ‚ ‚ ‡ ›ÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿÜ ~E  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d	  d  d  c ‚ÿÃÿ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ Õ þ æ@þ‚ ‚ ‚ Î ‚ÿ‚ÿÍÿì ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿöÿÜ ~E  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  d  Z  N  L  C‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ – þþ2ì@þ+‚ – ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿâÿõ þþþñ c                                                                  ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ î þþ þ?ø@þ=þÝ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ›ÿø þ	þ1ø@þ3þ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ æ ¡ÿõ þþþþþõ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿƒÿø þþ<ï@þ#þ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ º ‚ÿ‚ÿÐÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÿÿû þþ<é@þ#‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ˆ ‚ÿ‚ÿ‚ÿ‚ÿüÿì ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿø þ&ã@þ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ Ø ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ•ÿû þþ>ã@þ3‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ £ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÊÿû þÝ@þ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ó ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿüÿû þÝ@þ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ Á ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¯ÿû þà@þ>þ‚ ‚ ‚ ‚ ‚ ‚  ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿáÿû þþ?ã@þ/‚ ‚ ‚ ‚ ‚ Ö ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ—ÿø þ æ@þ<þ	‚ ‚ ‚ ¤ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÆÿû þþ2ì@þ=þ‚ ‚ î ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿøÿø þþ þ?ø@þ?þ)þ¹ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¨ÿõ þþþþþõ ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿâÿà ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿÙÿì ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ‚ÿ¬ÿ€
+%%EndData
+end
+%%PageTrailer
+%%Trailer
+%%BoundingBox: -0 -0 452 221
+%%HiResBoundingBox: 0 0 452 221
+%%EOF

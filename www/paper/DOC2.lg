@@ -1,0 +1,483 @@
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: eccc1000 font-variant: small-caps;
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+htfcss: cmbsy font-weight: bold;
+htfcss: cmbsy font-weight: bold;
+htfcss: cmbsy font-weight: bold;
+htfcss: ecbx  font-weight: bold;
+htfcss: ecsx  font-weight: bold;
+htfcss: ecbi  font-weight: bold;   font-style: italic;
+htfcss: ecit  font-style: italic; font-family: monospace;
+htfcss: ecss  font-family: sans-serif;
+htfcss: ecff  font-family: fantasy;
+htfcss: ecti  font-style: italic;
+htfcss: ectt  font-family: monospace;
+File: DOC2.html
+File: DOC2.css
+File: DOC2.tmp
+Font_Class(4,"4"): <span  class="small-caps"></span>
+File: DOC22.html
+File: DOC23.html
+File: DOC24.html
+File: DOC25.html
+File: DOC26.html
+File: DOC27.html
+File: DOC28.html
+File: DOC29.html
+File: DOC210.html
+File: DOC211.html
+File: DOC212.html
+File: DOC213.html
+File: DOC214.html
+File: DOC215.html
+File: DOC216.html
+File: DOC217.html
+Font_Class(1,"1"): <img  src="" alt="" class="%s-%dx-x-%x" />
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: math { text-indent: 0em; }
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: .equation td{text-align:center; vertical-align:middle; }
+Css: td.eq-no{ width:5%; }
+Css: table.equation { width:100%; } 
+Css: div.math-display, div.par-math-display{text-align:center;}
+Css: mtr.hline mtd{ border-bottom:black solid 1px; padding-top:2px; padding-bottom:0em; }
+Css: mtr.hline mtd mo{ display:none }
+Css: math .texttt { font-family: monospace; }
+Css: math .textit { font-style: italic; }
+Css: math .textsl { font-style: oblique; }
+Css: math .textsf { font-family: sans-serif; }
+Css: math .textbf { font-weight: bold; }
+Css: mo.MathClass-op + mi{margin-left:0.3em}
+Css: mi + mo.MathClass-op{margin-left:0.3em}
+Css:  math mi[mathvariant="bold"] { font-weight: bold; font-style: normal; } 
+Css:  math mi[mathvariant="normal"] { font-weight: normal; font-style: normal; } 
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 12
+Css: .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+Css: h1.partHead{text-align: center}
+Css:  .chapterToc, .likechapterToc {margin-left:0em;}
+Css:  .chapterToc ~ .likesectionToc, .chapterToc ~ .sectionToc, .likechapterToc ~ .likesectionToc, .likechapterToc ~ .sectionToc {margin-left:2em;}
+Css:  .chapterToc ~ .likesectionToc ~ .likesubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc, .likechapterToc ~ .sectionToc ~ .subsectionToc {margin-left:4em;}
+Css: .chapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc ~ .subsubsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likechapterToc ~ .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc .likechapterToc ~ .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:6em;}
+Css:  .likesectionToc , .sectionToc {margin-left:0em;}
+Css:  .likesectionToc ~ .likesubsectionToc, .likesectionToc ~ .subsectionToc, .sectionToc ~ .likesubsectionToc, .sectionToc ~ .subsectionToc {margin-left:2em;}
+Css: .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:4em;}
+Css:  .likesubsectionToc, .subsectionToc {margin-left:0em;}
+Css:  .likesubsectionToc ~ .subsubsectionToc, .subsectionToc ~ .subsubsectionToc {margin-left:2em;}
+Css: .equation-star td{text-align:center; vertical-align:middle; }
+Css: table.equation-star { width:100%; } 
+Css: mtd.align-odd{margin-left:2em; text-align:right;}
+Css: mtd.align-even{margin-right:2em; text-align:left;}
+Css: .boxed{border: 1px solid black; padding-left:2px; padding-right:2px;}
+Css: mo.qopname + mi{margin-left:0.3em}
+Css: mi + mo.qopname{margin-left:0.3em}
+Css: .rotatebox{display: inline-block;}
+Css: .figure img.graphics {margin-left:10%;}
+File: figures/hyper37.png
+File: figures/euc1.png
+File: figures/euc1.png
+File: figures/neuc.png
+File: figures/neuc.png
+File: figures/peint.png
+File: figures/peint.png
+File: figures/posid.png
+File: figures/proclus.png
+File: figures/ALJAHW2.png
+File: figures/WAL1.png
+File: figures/sac.png
+File: figures/sacc2002.png
+File: figures/Leg1.png
+File: figures/poinc.png
+File: figures/poinc1.png
+File: figures/lobat50.png
+File: figures/Postulat5.png
+File: figures/th1.png
+File: figures/th2.png
+File: figures/LIVRE1&4.png
+File: figures/th7.png
+File: figures/euc.png
+File: figures/euc2.png
+File: figures/th11.png
+File: figures/th14.png
+File: figures/LIVRE1&16.png
+File: figures/th18.png
+File: figures/th21.png
+File: figures/LIVRE1&23.png
+File: figures/th24.png
+File: figures/th27.png
+File: figures/LIVRE1&28.png
+File: figures/th29.png
+File: figures/th30.png
+File: figures/th31.png
+File: figures/th32.png
+File: figures/coordonneespheriques.png
+File: figures/coordonneespheriques1.png
+File: figures/sphre2.png
+File: figures/sphre1.png
+File: figures/sphre5ter.png
+File: figures/sphre6.png
+File: figures/demi-sphere2bis.png
+File: figures/demi-sphre2ter.png
+File: figures/posi6.png
+File: figures/posi1.png
+File: figures/ALJAHW5.png
+File: figures/ALJAHW6.png
+File: figures/JAHWA3.png
+File: figures/JAHWA4.png
+File: figures/KHAYYAM.png
+File: figures/KHAYYAM.png
+File: figures/KHAYYAM1.png
+File: figures/KHAYYAM3.png
+File: figures/KHAYYAM2.png
+File: figures/WALLIS1.png
+File: figures/WALLIS2.png
+File: figures/WALLIS3.png
+File: figures/WALLIS4.png
+File: figures/WALLIS5.png
+File: figures/WALLIS6.png
+File: figures/WALLIS7.png
+File: figures/sacc1.png
+File: figures/sacc3.png
+File: figures/sacc6.png
+File: figures/sacc7.png
+File: figures/saccheri1.png
+File: figures/saccheri2.png
+File: figures/saccheri3.png
+File: figures/saccheri2bis.png
+File: figures/saccheri4.png
+File: figures/saccheri5.png
+File: figures/saccheri6.png
+File: figures/saccheri6.png
+File: figures/saccheri7.png
+File: figures/saccheri1bis.png
+File: figures/saccheri1ter.png
+File: figures/saccheri1quater.png
+File: figures/sccH1a.png
+File: figures/saccH1b.png
+File: figures/sacc132.png
+File: figures/sacc133.png
+File: figures/sacc134.png
+File: figures/sacc137bis.png
+File: figures/sacc137.png
+File: figures/sacc137ter.png
+File: figures/sacc170.png
+File: figures/sacc170bis.png
+File: figures/sacc170ter.png
+File: figures/sacc231.png
+File: figures/sacc240.png
+File: figures/sacc233BIS.png
+File: figures/sacc233BIS.png
+File: figures/sacc150.png
+File: figures/saccH2c.png
+File: figures/sacc11.png
+File: figures/sacc12.png
+File: figures/sacc12.png
+File: figures/sacc14.png
+File: figures/saccH1b.png
+File: figures/sacc20.png
+File: figures/sacc20.png
+File: figures/sacc21bis.png
+File: figures/sacc21.png
+File: figures/sacc22.png
+File: figures/sacc23.png
+File: figures/sacc24.png
+File: figures/sacc41.png
+File: figures/sccH1a.png
+File: figures/Lambert1.png
+File: figures/Lambert2.png
+File: figures/lambert10.png
+File: figures/lambert10.png
+File: figures/Lambert1.png
+File: figures/Lambert3.png
+File: figures/Lambert4.png
+File: figures/Lambert5.png
+File: figures/Legendre1.png
+File: figures/Legendre2.png
+File: figures/Legendre1.png
+File: figures/Legendre1.png
+File: figures/Lobat1.png
+File: figures/Lobat3.png
+File: figures/Lobat4.png
+File: figures/Lobat5.png
+File: figures/Lobat1.png
+File: figures/Lobat6.png
+File: figures/Lobat7.png
+File: figures/Lobat8.png
+File: figures/Lobat8bis.png
+File: figures/Lobat50.png
+File: figures/Lobat51.png
+File: figures/Lobat9.png
+File: figures/Lobat10.png
+File: figures/Lobat10bis.png
+File: figures/Lobat11.png
+File: figures/Lobat12.png
+File: figures/Lobat13.png
+File: figures/Lobat14.png
+File: figures/Lobat15.png
+File: figures/Lobat16.png
+File: figures/Lobat17.png
+File: figures/Lobat18.png
+File: figures/Lobat19.png
+File: figures/Lobat20.png
+File: figures/Lobat20bis.png
+File: figures/Lobat21.png
+File: figures/Lobat23.png
+File: figures/Lobat24.png
+File: figures/Lobat25.png
+File: figures/Lobat26.png
+File: figures/Lobat27.png
+File: figures/Lobat28.png
+File: figures/Lobat29.png
+File: figures/Lobat30.png
+File: figures/Lobat31.png
+File: figures/mobius2.png
+File: figures/mobius3.png
+File: figures/mobius4.png
+File: figures/poin1.png
+File: figures/hyper1.png
+File: figures/hyper2.png
+File: figures/hyper3.png
+File: figures/hyper5.png
+File: figures/hyper114.png
+File: figures/hyper115.png
+File: figures/hyper8.png
+File: figures/hyper8.png
+File: figures/hyper11.png
+File: figures/hyper12.png
+File: figures/Hyper9.png
+File: figures/Hyper10.png
+File: figures/Hyper10.png
+File: figures/hyper13.png
+File: figures/hyper111.png
+File: figures/hyper112.png
+File: figures/hyper16.png
+File: figures/hyper116.png
+File: figures/hyper18.png
+File: figures/hyper14.png
+File: figures/hyper15.png
+File: figures/hyper20.png
+File: figures/hyper21.png
+File: figures/hyper24bis.png
+File: figures/hyper24.png
+File: figures/hyper26.png
+File: figures/hyper22.png
+File: figures/hyper22.png
+File: figures/hyper27.png
+File: figures/hyper6.png
+File: figures/hyper7.png
+File: figures/bis1.png
+File: figures/hyper38.png
+File: figures/hyper38bis.png
+File: figures/hyper38ter.png
+File: figures/bis2.png
+File: figures/bis3.png
+File: figures/bis4.png
+File: figures/bis5.png
+File: figures/hyper43.png
+File: figures/hyper41.png
+File: figures/isom6.png
+File: figures/isom7.png
+File: figures/isom21.png
+File: figures/isom22.png
+File: figures/isom23.png
+File: figures/isom25.png
+File: figures/isom26.png
+File: figures/lob2.png
+File: figures/lob1.png
+File: figures/Lobat3bis.png
+File: figures/lob4.png
+File: figures/lob5.png
+--- characters ---
+Font("cmr","10","10","100")
+Font("cmsy","10","10","100")
+Font("cmr","12","12","100")
+Font("ecrm","1200","12","100")
+Font("cmmib","10","10","120")
+Font("cmbsy","10","10","120")
+Font("cmbsy","8","8","100")
+Font("cmbsy","6","6","100")
+Font("cmex","10","10","120")
+Font("cmex","8","8","100")
+Font("cmex","7","7","85")
+Font("msam","10","10","120")
+Font("msam","10","10","80")
+Font("msam","7","7","85")
+Font("msbm","10","10","120")
+Font("msbm","10","10","80")
+Font("msbm","7","7","85")
+Font("cmr","8","8","100")
+Font("cmr","6","6","100")
+Font("cmmi","12","12","100")
+Font("cmmi","8","8","100")
+Font("cmmi","6","6","100")
+Font("cmsy","10","10","120")
+--- needs --- DOC2.idv[1] ==> cmsy10-c-49.png ---
+--- needs --- DOC2.idv[2] ==> cmsy10-c-41.png ---
+Font("cmsy","8","8","100")
+Font("cmsy","6","6","100")
+Font("ecrm","2074","20","100")
+Font("ecrm","1440","14","100")
+Font("cmmi","12","12","120")
+Font("eccc1440","","14","100")
+Font("ecti","1200","12","100")
+Font("ecbx","1200","12","100")
+Font("eufm","10","10","120")
+Font("ecrm","1095","10","100")
+Font("ecrm","1000","10","100")
+Font("ecti","1000","10","100")
+Font("ecbi","1200","12","100")

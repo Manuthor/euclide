@@ -1,0 +1,160 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\tocpart{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Avant propos}}{5}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Table des mati\`eres}}{7}\relax 
+\doTocEntry\tocpart{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{HISTORIQUE RAPIDE.}}{5}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-40001}{QQ2-1-4}{Introduction:}}{7}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-50002}{QQ2-1-5}{Math\IeC {\'e}matiques grecques}}{9}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-60002.1}{QQ2-1-6}{Naissance des math\IeC {\'e}matiques:}}{9}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-70002.2}{QQ2-1-7}{Quatre si\IeC {\`e}cles de r\IeC {\'e}flexion...:}}{10}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-80003}{QQ2-1-8}{El\IeC {\'e}ments d'Euclide}}{13}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-90003.1}{QQ2-1-9}{introduction}}{13}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-100003.2}{QQ2-1-10}{Composition des El\IeC {\'e}ments d'Euclide:}}{14}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-110003.3}{QQ2-1-11}{Composition du livre 1:}}{14}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{1}{x1-120003.3.1}{QQ2-1-12}{Les axiomes ou "notions communes":}}{14}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{1}{x1-130003.3.2}{QQ2-1-13}{Les postulats ou "demandes":}}{16}\relax 
+\doTocEntry\tocsubsection{3.3.3}{\csname a:TocLink\endcsname{1}{x1-140003.3.3}{QQ2-1-14}{Les d\IeC {\'e}finitions:}}{17}\relax 
+\doTocEntry\tocsubsection{3.3.4}{\csname a:TocLink\endcsname{1}{x1-150003.3.4}{QQ2-1-15}{Les th\IeC {\'e}or\IeC {\`e}mes:}}{18}\relax 
+\doTocEntry\tocsubsection{3.3.5}{\csname a:TocLink\endcsname{1}{x1-160003.3.5}{QQ2-1-16}{Notion de distance:}}{19}\relax 
+\doTocEntry\tocsubsection{3.3.6}{\csname a:TocLink\endcsname{1}{x1-170003.3.6}{QQ2-1-17}{Conclusion:}}{20}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-180004}{QQ2-1-18}{Math\IeC {\'e}matiques et monde r\IeC {\'e}el}}{23}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-190004.1}{QQ2-1-19}{Math\IeC {\'e}matiques fondamentales et appliqu\IeC {\'e}es:}}{23}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-200004.2}{QQ2-1-20}{De l'antiquit\IeC {\'e} \IeC {\`a} nos jours:}}{24}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{1}{x1-210004.3}{QQ2-1-21}{La g\IeC {\'e}ographie:}}{27}\relax 
+\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{1}{x1-220004.4}{QQ2-1-22}{La peinture \IeC {\`a} la Rennaissance:}}{29}\relax 
+\doTocEntry\tocsection{4.5}{\csname a:TocLink\endcsname{1}{x1-230004.5}{QQ2-1-23}{Le probl\IeC {\`e}me des parall\IeC {\`e}les et Aristote}}{31}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-240005}{QQ2-1-24}{Historique des travaux faits sur P5:}}{33}\relax 
+\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-250005.1}{QQ2-1-25}{Antiquit\IeC {\'e}}}{33}\relax 
+\doTocEntry\tocsubsection{5.1.1}{\csname a:TocLink\endcsname{1}{x1-260005.1.1}{QQ2-1-26}{ Posidonius: (131-51 AV.J.C)}}{33}\relax 
+\doTocEntry\tocsubsection{5.1.2}{\csname a:TocLink\endcsname{1}{x1-270005.1.2}{QQ2-1-27}{Proclus: (410-483 ap.J.C.):}}{34}\relax 
+\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-280005.2}{QQ2-1-28}{Math\IeC {\'e}maticiens arabes (1)}}{35}\relax 
+\doTocEntry\tocsubsection{5.2.1}{\csname a:TocLink\endcsname{1}{x1-290005.2.1}{QQ2-1-29}{Al Jawhari}}{35}\relax 
+\doTocEntry\tocsubsection{5.2.2}{\csname a:TocLink\endcsname{1}{x1-300005.2.2}{QQ2-1-30}{Thabit b. Qurra}}{36}\relax 
+\doTocEntry\tocsubsection{5.2.3}{\csname a:TocLink\endcsname{1}{x1-310005.2.3}{QQ2-1-31}{Ibn al-Haytam:}}{37}\relax 
+\doTocEntry\tocsubsection{5.2.4}{\csname a:TocLink\endcsname{1}{x1-320005.2.4}{QQ2-1-32}{Al Khayyam:}}{37}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-330005.3}{QQ2-1-33}{Tentatives de d\IeC {\'e}monstrations \IeC {\`a} partir du XVIIe:}}{38}\relax 
+\doTocEntry\tocsubsection{5.3.1}{\csname a:TocLink\endcsname{1}{x1-340005.3.1}{QQ2-1-34}{Wallis : math\IeC {\'e}maticien \IeC {\'e}cossais.}}{38}\relax 
+\doTocEntry\tocsubsection{5.3.2}{\csname a:TocLink\endcsname{1}{x1-350005.3.2}{QQ2-1-35}{Girolamo Saccheri: (1)}}{39}\relax 
+\doTocEntry\tocsubsection{5.3.3}{\csname a:TocLink\endcsname{1}{x1-360005.3.3}{QQ2-1-36}{Johann Heinrich Lambert:(1)}}{41}\relax 
+\doTocEntry\tocsubsection{5.3.4}{\csname a:TocLink\endcsname{1}{x1-370005.3.4}{QQ2-1-37}{Adrien Marie LEGENDRE: (1752-1833) (1)}}{42}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-380006}{QQ2-1-38}{Positions philosophiques aux XVII-XVIIIe si\IeC {\`e}cles:}}{43}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-390006.1}{QQ2-1-39}{Newton: }}{43}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-400006.2}{QQ2-1-40}{Pascal}}{43}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-410006.3}{QQ2-1-41}{Descartes}}{44}\relax 
+\doTocEntry\tocsection{6.4}{\csname a:TocLink\endcsname{1}{x1-420006.4}{QQ2-1-42}{Kant:}}{45}\relax 
+\doTocEntry\tocsection{6.5}{\csname a:TocLink\endcsname{1}{x1-430006.5}{QQ2-1-43}{Conclusion:}}{45}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-440007}{QQ2-1-44}{G\IeC {\'e}om\IeC {\'e}trie non euclidiennes avec Lobatchevski et Bolyai:}}{47}\relax 
+\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{1}{x1-450007.1}{QQ2-1-45}{ Naissance difficile:}}{47}\relax 
+\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{1}{x1-460007.2}{QQ2-1-46}{Premi\IeC {\`e}res g\IeC {\'e}om\IeC {\'e}tries non euclidiennes: }}{48}\relax 
+\doTocEntry\tocsubsection{7.2.1}{\csname a:TocLink\endcsname{1}{x1-470007.2.1}{QQ2-1-47}{Int\IeC {\'e}ressons nous \IeC {\`a} la g\IeC {\'e}om\IeC {\'e}trie de Lobatchevski:(1)}}{48}\relax 
+\doTocEntry\tocsubsection{7.2.2}{\csname a:TocLink\endcsname{1}{x1-480007.2.2}{QQ2-1-48}{Autres g\IeC {\'e}om\IeC {\'e}tries possibles:}}{51}\relax 
+\doTocEntry\tocsubsection{7.2.3}{\csname a:TocLink\endcsname{1}{x1-490007.2.3}{QQ2-1-49}{R\IeC {\'e}actions provoqu\IeC {\'e}es dans le courant du XIXe si\IeC {\`e}cle:}}{51}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-500008}{QQ2-1-50}{Conclusion:}}{53}\relax 
+\doTocEntry\tocpart{}{\csname a:TocLink\endcsname{1}{x1-510008}{QQ2-1-51}{D'EUCLIDE A LOBATCHEVSKI:}}{57}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-520009}{QQ2-1-52}{INTRODUCTION}}{59}\relax 
+\doTocEntry\tocchapter{10}{\csname a:TocLink\endcsname{1}{x1-5300010}{QQ2-1-53}{ Les El\IeC {\'e}ments d'Euclide:}}{61}\relax 
+\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{1}{x1-5400010.1}{QQ2-1-54}{Les d\IeC {\'e}finitions:}}{61}\relax 
+\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{1}{x1-5500010.2}{QQ2-1-55}{Les postulats:}}{64}\relax 
+\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{1}{x1-5600010.3}{QQ2-1-56}{Les axiomes:}}{65}\relax 
+\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{1}{x1-5700010.4}{QQ2-1-57}{Les th\IeC {\'e}or\IeC {\`e}mes:}}{65}\relax 
+\doTocEntry\tocsubsection{10.4.1}{\csname a:TocLink\endcsname{1}{x1-5800010.4.1}{QQ2-1-58}{Livre 1: th\IeC {\'e}or\IeC {\`e}mes ne faisant pas intervenir P5.}}{66}\relax 
+\doTocEntry\tocsubsection{10.4.2}{\csname a:TocLink\endcsname{1}{x1-5900010.4.2}{QQ2-1-59}{Livre 1: Th\IeC {\'e}or\IeC {\`e}mes faisant intervenir P5.}}{74}\relax 
+\doTocEntry\tocchapter{11}{\csname a:TocLink\endcsname{1}{x1-6000011}{QQ2-1-60}{G\IeC {\'e}om\IeC {\'e}trie sur une sph\IeC {\`e}re}}{77}\relax 
+\doTocEntry\tocsection{11.1}{\csname a:TocLink\endcsname{1}{x1-6100011.1}{QQ2-1-61}{Introduction:}}{77}\relax 
+\doTocEntry\tocsection{11.2}{\csname a:TocLink\endcsname{1}{x1-6200011.2}{QQ2-1-62}{Somme des angles:}}{79}\relax 
+\doTocEntry\tocsection{11.3}{\csname a:TocLink\endcsname{1}{x1-6300011.3}{QQ2-1-63}{Triangles semblables:}}{82}\relax 
+\doTocEntry\tocsubsection{11.3.1}{\csname a:TocLink\endcsname{1}{x1-6400011.3.1}{QQ2-1-64}{Que peut-on dire des angles?}}{82}\relax 
+\doTocEntry\tocsubsection{11.3.2}{\csname a:TocLink\endcsname{1}{x1-6500011.3.2}{QQ2-1-65}{Que peut-on dire des c\IeC {\^o}t\IeC {\'e}s?}}{83}\relax 
+\doTocEntry\tocchapter{12}{\csname a:TocLink\endcsname{1}{x1-6600012}{QQ2-1-66}{Posidonius:}}{85}\relax 
+\doTocEntry\tocchapter{13}{\csname a:TocLink\endcsname{1}{x1-6700013}{QQ2-1-67}{Al Jahwari:}}{87}\relax 
+\doTocEntry\tocsection{13.1}{\csname a:TocLink\endcsname{1}{x1-6800013.1}{QQ2-1-68}{Prouvons d'abord que si PJ est vrai alors P5 est vrai.}}{87}\relax 
+\doTocEntry\tocsection{13.2}{\csname a:TocLink\endcsname{1}{x1-6900013.2}{QQ2-1-69}{PJ est-il ind\IeC {\'e}pendant de P5?}}{89}\relax 
+\doTocEntry\tocchapter{14}{\csname a:TocLink\endcsname{1}{x1-7000014}{QQ2-1-70}{Al Khayyam:}}{91}\relax 
+\doTocEntry\tocsection{14.1}{\csname a:TocLink\endcsname{1}{x1-7100014.1}{QQ2-1-71}{le quadrilat\IeC {\`e}re de Al Khayyam:}}{91}\relax 
+\doTocEntry\tocchapter{15}{\csname a:TocLink\endcsname{1}{x1-7200015}{QQ2-1-72}{Wallis:}}{95}\relax 
+\doTocEntry\tocsection{15.1}{\csname a:TocLink\endcsname{1}{x1-7300015.1}{QQ2-1-73}{PW est-il vraiment ind\IeC {\'e}pendant de P5?}}{95}\relax 
+\doTocEntry\tocsubsection{15.1.1}{\csname a:TocLink\endcsname{1}{x1-7400015.1.1}{QQ2-1-74}{ D'abord par les angles:}}{95}\relax 
+\doTocEntry\tocsubsection{15.1.2}{\csname a:TocLink\endcsname{1}{x1-7500015.1.2}{QQ2-1-75}{Essayons par la proportionnalit\IeC {\'e}.}}{95}\relax 
+\doTocEntry\tocsection{15.2}{\csname a:TocLink\endcsname{1}{x1-7600015.2}{QQ2-1-76}{PW implique P5:}}{96}\relax 
+\doTocEntry\tocsubsection{15.2.1}{\csname a:TocLink\endcsname{1}{x1-7700015.2.1}{QQ2-1-77}{Somme des angles dans un triangle:}}{96}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-7800015.2.1}{QQ2-1-78}{Triangle rectangle:}}{96}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-7900015.2.1}{QQ2-1-79}{Triangle quelconque:}}{97}\relax 
+\doTocEntry\tocsubsection{15.2.2}{\csname a:TocLink\endcsname{1}{x1-8000015.2.2}{QQ2-1-80}{D\IeC {\'e}monstration de P5:}}{98}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-8100015.2.2}{QQ2-1-81}{D\IeC {\'e}montrons P5:}}{99}\relax 
+\doTocEntry\tocchapter{16}{\csname a:TocLink\endcsname{1}{x1-8200016}{QQ2-1-82}{SACCHERI:(1)}}{101}\relax 
+\doTocEntry\tocsection{16.1}{\csname a:TocLink\endcsname{1}{x1-8300016.1}{QQ2-1-83}{Premiers r\IeC {\'e}sultats:}}{102}\relax 
+\doTocEntry\tocsection{16.2}{\csname a:TocLink\endcsname{1}{x1-8400016.2}{QQ2-1-84}{Hypoth\IeC {\`e}ses de Saccheri.}}{103}\relax 
+\doTocEntry\tocsection{16.3}{\csname a:TocLink\endcsname{1}{x1-8500016.3}{QQ2-1-85}{On se place sous H1:}}{103}\relax 
+\doTocEntry\tocsubsection{16.3.1}{\csname a:TocLink\endcsname{1}{x1-8600016.3.1}{QQ2-1-86}{On va d\IeC {\'e}montrer que s'il existe un S-q dont les quatre angles sont droits alors tous les S-q sont des rectangles.}}{104}\relax 
+\doTocEntry\tocsubsection{16.3.2}{\csname a:TocLink\endcsname{1}{x1-8700016.3.2}{QQ2-1-87}{Somme des angles d'un triangle:}}{107}\relax 
+\doTocEntry\tocsubsection{16.3.3}{\csname a:TocLink\endcsname{1}{x1-8800016.3.3}{QQ2-1-88}{D\IeC {\'e}monstration de P5:}}{107}\relax 
+\doTocEntry\tocsection{16.4}{\csname a:TocLink\endcsname{1}{x1-8900016.4}{QQ2-1-89}{On se place sous H2:}}{110}\relax 
+\doTocEntry\tocsubsection{16.4.1}{\csname a:TocLink\endcsname{1}{x1-9000016.4.1}{QQ2-1-90}{R\IeC {\'e}sultats pr\IeC {\'e}l\IeC {\'e}minaires:}}{110}\relax 
+\doTocEntry\tocsubsection{16.4.2}{\csname a:TocLink\endcsname{1}{x1-9100016.4.2}{QQ2-1-91}{Somme des angles dans un triangle:}}{118}\relax 
+\doTocEntry\tocsubsection{16.4.3}{\csname a:TocLink\endcsname{1}{x1-9200016.4.3}{QQ2-1-92}{D\IeC {\'e}monstration de P5:}}{119}\relax 
+\doTocEntry\tocsubsection{16.4.4}{\csname a:TocLink\endcsname{1}{x1-9300016.4.4}{QQ2-1-93}{Analyse de cette incoh\IeC {\'e}rence:}}{120}\relax 
+\doTocEntry\tocsubsection{16.4.5}{\csname a:TocLink\endcsname{1}{x1-9400016.4.5}{QQ2-1-94}{Sous H2 existe-t-il des droites parall\IeC {\`e}les?}}{122}\relax 
+\doTocEntry\tocsubsection{16.4.6}{\csname a:TocLink\endcsname{1}{x1-9500016.4.6}{QQ2-1-95}{ Peut-on construire une g\IeC {\'e}om\IeC {\'e}trie coh\IeC {\'e}rente en prenant avec l'hypoth\IeC {\`e}se H2?}}{127}\relax 
+\doTocEntry\tocsection{16.5}{\csname a:TocLink\endcsname{1}{x1-9600016.5}{QQ2-1-96}{On se place sous H3:}}{130}\relax 
+\doTocEntry\tocchapter{17}{\csname a:TocLink\endcsname{1}{x1-9700017}{QQ2-1-97}{Lambert:}}{133}\relax 
+\doTocEntry\tocsection{17.1}{\csname a:TocLink\endcsname{1}{x1-9800017.1}{QQ2-1-98}{Somme des angles d'un triangle sous H3.}}{133}\relax 
+\doTocEntry\tocsection{17.2}{\csname a:TocLink\endcsname{1}{x1-9900017.2}{QQ2-1-99}{Triangles semblables:}}{134}\relax 
+\doTocEntry\tocsection{17.3}{\csname a:TocLink\endcsname{1}{x1-10000017.3}{QQ2-1-100}{Propri\IeC {\'e}t\IeC {\'e}s du quadrilat\IeC {\`e}re de Lambert:}}{135}\relax 
+\doTocEntry\tocchapter{18}{\csname a:TocLink\endcsname{1}{x1-10100018}{QQ2-1-101}{Legendre:}}{137}\relax 
+\doTocEntry\tocchapter{19}{\csname a:TocLink\endcsname{1}{x1-10200019}{QQ2-1-102}{Lobatcheski:}}{141}\relax 
+\doTocEntry\tocsection{19.1}{\csname a:TocLink\endcsname{1}{x1-10300019.1}{QQ2-1-103}{R\IeC {\'e}sultats sur les droites parall\IeC {\`e}les:}}{141}\relax 
+\doTocEntry\tocsection{19.2}{\csname a:TocLink\endcsname{1}{x1-10400019.2}{QQ2-1-104}{R\IeC {\'e}sultats sur les angles.}}{147}\relax 
+\doTocEntry\tocpart{}{\csname a:TocLink\endcsname{1}{x1-10500019.2}{QQ2-1-105}{ANALYSE COMPLEXE}}{157}\relax 
+\doTocEntry\tocchapter{20}{\csname a:TocLink\endcsname{1}{x1-10600020}{QQ2-1-106}{Notion de distance:}}{159}\relax 
+\doTocEntry\tocchapter{21}{\csname a:TocLink\endcsname{1}{x1-10700021}{QQ2-1-107}{L'ensemble des complexes:}}{161}\relax 
+\doTocEntry\tocsection{21.1}{\csname a:TocLink\endcsname{1}{x1-10800021.1}{QQ2-1-108}{ Calculons la longueur d'un chemin:}}{161}\relax 
+\doTocEntry\tocsubsection{21.1.1}{\csname a:TocLink\endcsname{1}{x1-10900021.1.1}{QQ2-1-109}{Cas euclidien:}}{161}\relax 
+\doTocEntry\tocsubsection{21.1.2}{\csname a:TocLink\endcsname{1}{x1-11000021.1.2}{QQ2-1-110}{Fonction poids ou m\IeC {\'e}trique:}}{165}\relax 
+\doTocEntry\tocsection{21.2}{\csname a:TocLink\endcsname{1}{x1-11100021.2}{QQ2-1-111}{Transformation de M\IeC {\"o}bius:}}{171}\relax 
+\doTocEntry\tocsubsection{21.2.1}{\csname a:TocLink\endcsname{1}{x1-11200021.2.1}{QQ2-1-112}{D\IeC {\'e}finition:}}{171}\relax 
+\doTocEntry\tocsubsection{21.2.2}{\csname a:TocLink\endcsname{1}{x1-11300021.2.2}{QQ2-1-113}{Inversion dans $K$:}}{172}\relax 
+\doTocEntry\tocsubsection{21.2.3}{\csname a:TocLink\endcsname{1}{x1-11400021.2.3}{QQ2-1-114}{Transformations conformes et anticonformes:}}{175}\relax 
+\doTocEntry\tocsubsection{21.2.4}{\csname a:TocLink\endcsname{1}{x1-11500021.2.4}{QQ2-1-115}{Image d'une droite ou d'un cercle par une transformation de M\IeC {\"o}bius:}}{175}\relax 
+\doTocEntry\tocchapter{22}{\csname a:TocLink\endcsname{1}{x1-11600022}{QQ2-1-116}{disque de poincar\IeC {\'e}:}}{177}\relax 
+\doTocEntry\tocsection{22.1}{\csname a:TocLink\endcsname{1}{x1-11700022.1}{QQ2-1-117}{Groupe des isom\IeC {\'e}tries de U:}}{177}\relax 
+\doTocEntry\tocsection{22.2}{\csname a:TocLink\endcsname{1}{x1-11800022.2}{QQ2-1-118}{G\IeC {\'e}od\IeC {\'e}siques de U:}}{186}\relax 
+\doTocEntry\tocsection{22.3}{\csname a:TocLink\endcsname{1}{x1-11900022.3}{QQ2-1-119}{Illustration:}}{195}\relax 
+\doTocEntry\tocsection{22.4}{\csname a:TocLink\endcsname{1}{x1-12000022.4}{QQ2-1-120}{Topologie dans U:}}{195}\relax 
+\doTocEntry\tocsection{22.5}{\csname a:TocLink\endcsname{1}{x1-12100022.5}{QQ2-1-121}{Introduction au demi-plan de Poincar\IeC {\'e}:}}{196}\relax 
+\doTocEntry\tocchapter{23}{\csname a:TocLink\endcsname{1}{x1-12200023}{QQ2-1-122}{Demi-plan de Poincar\IeC {\'e} \textbf  {P}:}}{197}\relax 
+\doTocEntry\tocsection{23.1}{\csname a:TocLink\endcsname{1}{x1-12300023.1}{QQ2-1-123}{Distance dans \textbf  {P}:}}{197}\relax 
+\doTocEntry\tocsubsection{23.1.1}{\csname a:TocLink\endcsname{1}{x1-12400023.1.1}{QQ2-1-124}{Proposition 4.1:}}{197}\relax 
+\doTocEntry\tocsection{23.2}{\csname a:TocLink\endcsname{1}{x1-12500023.2}{QQ2-1-125}{G\IeC {\'e}od\IeC {\'e}siques dans P:}}{206}\relax 
+\doTocEntry\tocsubsection{23.2.1}{\csname a:TocLink\endcsname{1}{x1-12600023.2.1}{QQ2-1-126}{Image du cerle C, fronti\IeC {\`e}re de U:}}{206}\relax 
+\doTocEntry\tocsubsection{23.2.2}{\csname a:TocLink\endcsname{1}{x1-12700023.2.2}{QQ2-1-127}{Image d'un cercle, $\mathfrak  {C}$, orthogonal \IeC {\`a} C:}}{207}\relax 
+\doTocEntry\tocsubsection{23.2.3}{\csname a:TocLink\endcsname{1}{x1-12800023.2.3}{QQ2-1-128}{Image d'un diam\IeC {\`e}tre de C:}}{208}\relax 
+\doTocEntry\tocsection{23.3}{\csname a:TocLink\endcsname{1}{x1-12900023.3}{QQ2-1-129}{Recherche des isom\IeC {\'e}tries de P:}}{208}\relax 
+\doTocEntry\tocsubsection{23.3.1}{\csname a:TocLink\endcsname{1}{x1-13000023.3.1}{QQ2-1-130}{R\IeC {\'e}flexions hyperboliques:}}{209}\relax 
+\doTocEntry\tocsubsection{23.3.2}{\csname a:TocLink\endcsname{1}{x1-13100023.3.2}{QQ2-1-131}{Caract\IeC {\'e}risation d'une transformation conforme:}}{212}\relax 
+\doTocEntry\tocsubsection{23.3.3}{\csname a:TocLink\endcsname{1}{x1-13200023.3.3}{QQ2-1-132}{Groupe des isom\IeC {\'e}tries:}}{215}\relax 
+\doTocEntry\tocchapter{24}{\csname a:TocLink\endcsname{1}{x1-13300024}{QQ2-1-133}{G\IeC {\'e}om\IeC {\'e}trie dans P:}}{221}\relax 
+\doTocEntry\tocsection{24.1}{\csname a:TocLink\endcsname{1}{x1-13400024.1}{QQ2-1-134}{Introduction:}}{221}\relax 
+\doTocEntry\tocsection{24.2}{\csname a:TocLink\endcsname{1}{x1-13500024.2}{QQ2-1-135}{Polygones:}}{221}\relax 
+\doTocEntry\tocsubsection{24.2.1}{\csname a:TocLink\endcsname{1}{x1-13600024.2.1}{QQ2-1-136}{Somme des angles dans un polygone:}}{222}\relax 
+\doTocEntry\tocsubsection{24.2.2}{\csname a:TocLink\endcsname{1}{x1-13700024.2.2}{QQ2-1-137}{Trangles congruents et semblables:}}{225}\relax 
+\doTocEntry\tocsubsection{24.2.3}{\csname a:TocLink\endcsname{1}{x1-13800024.2.3}{QQ2-1-138}{Aire d'un triangle:}}{228}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-13900024.2.3}{QQ2-1-139}{1. Aire d'un triangle id\IeC {\'e}al:}}{228}\relax 
+\doTocEntry\tocparagraph{}{\csname a:TocLink\endcsname{1}{x1-14000024.2.3}{QQ2-1-140}{ 2. Aire d'un triangle semi id\IeC {\'e}al, c'est \IeC {\`a} dire ayant deux sommets sur l'axe des r\IeC {\'e}el et le troisi\IeC {\`e}me sommet r\IeC {\'e}el.}}{229}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-14100024.2.3}{QQ2-1-141}{a- deux triangles semi id\IeC {\'e}aux sont congruents si et seulement si ils ont le m\IeC {\^e}me angle int\IeC {\'e}rieur en leur sommet r\IeC {\'e}el. }}{229}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-14200024.2.3}{QQ2-1-142}{b- l'aire d'un triangle semi-id\IeC {\'e}al est \IeC {\'e}gale \IeC {\`a} $\genfrac  {}{}{}0{k^{2}}{4} \pi -\alpha $ o\IeC {\`u} $\alpha $ est l'angle int\IeC {\'e}rieur du sommet r\IeC {\'e}el.}}{230}\relax 
+\doTocEntry\tocsubparagraph{}{\csname a:TocLink\endcsname{1}{x1-14300024.2.3}{QQ2-1-143}{c- Calculons l'aire d'un triangle dont les trois sommets sont r\IeC {\'e}els.}}{232}\relax 
+\doTocEntry\tocsection{24.3}{\csname a:TocLink\endcsname{1}{x1-14400024.3}{QQ2-1-144}{Cercle hyperbolique:}}{234}\relax 
+\doTocEntry\tocsubsection{24.3.1}{\csname a:TocLink\endcsname{1}{x1-14500024.3.1}{QQ2-1-145}{Cercle hyperbolique ou euclidien:}}{234}\relax 
+\doTocEntry\tocsubsection{24.3.2}{\csname a:TocLink\endcsname{1}{x1-14600024.3.2}{QQ2-1-146}{Longueur d'un cercle hyperbolique:}}{237}\relax 
+\doTocEntry\tocsubsection{24.3.3}{\csname a:TocLink\endcsname{1}{x1-14700024.3.3}{QQ2-1-147}{Aire d'un disque hyperbolique:}}{241}\relax 
+\doTocEntry\tocsection{24.4}{\csname a:TocLink\endcsname{1}{x1-14800024.4}{QQ2-1-148}{Bissectrices:}}{242}\relax 
+\doTocEntry\tocsubsection{24.4.1}{\csname a:TocLink\endcsname{1}{x1-14900024.4.1}{QQ2-1-149}{Existence:}}{242}\relax 
+\doTocEntry\tocsubsection{24.4.2}{\csname a:TocLink\endcsname{1}{x1-15000024.4.2}{QQ2-1-150}{Equidistance:}}{247}\relax 
+\doTocEntry\tocsection{24.5}{\csname a:TocLink\endcsname{1}{x1-15100024.5}{QQ2-1-151}{Classification des isom\IeC {\'e}tries:}}{248}\relax 
+\doTocEntry\tocsubsection{24.5.1}{\csname a:TocLink\endcsname{1}{x1-15200024.5.1}{QQ2-1-152}{Points invariants d'une isom\IeC {\'e}trie conforme:}}{249}\relax 
+\doTocEntry\tocsubsection{24.5.2}{\csname a:TocLink\endcsname{1}{x1-15300024.5.2}{QQ2-1-153}{D\IeC {\'e}composition d'une isom\IeC {\'e}trie conforme:}}{250}\relax 
+\doTocEntry\tocsubsection{24.5.3}{\csname a:TocLink\endcsname{1}{x1-15400024.5.3}{QQ2-1-154}{lien avec le plan euclidien:}}{253}\relax 
+\doTocEntry\tocsubsection{24.5.4}{\csname a:TocLink\endcsname{1}{x1-15500024.5.4}{QQ2-1-155}{Isom\IeC {\'e}tries involutives:}}{258}\relax 
+\doTocEntry\tocsection{24.6}{\csname a:TocLink\endcsname{1}{x1-15600024.6}{QQ2-1-156}{Lien avec Lobatchevski:}}{262}\relax 
+\doTocEntry\tocsubsection{24.6.1}{\csname a:TocLink\endcsname{1}{x1-15700024.6.1}{QQ2-1-157}{Postulat des parall\IeC {\`e}les:}}{262}\relax 
+\doTocEntry\tocsubsection{24.6.2}{\csname a:TocLink\endcsname{1}{x1-15800024.6.2}{QQ2-1-158}{Quelques r\IeC {\'e}sultats:}}{264}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-15900024.6.2}{QQ2-1-159}{Table des mati\`eres}}{265}\relax 

@@ -1,0 +1,1343 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=latex 2018.12.15)  21 DEC 2018 20:29
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCo
+de"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.
+{\g@addto@macro\@documentclasshook{\RequirePackage[#1,html]{tex4ht}}\let\HCode\
+documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname
+ tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{
+\HCode}{\documentstyle[tex4ht]}}}\makeatother\HCode foo.cfg.a.b.c.\input  DOC2.
+tex
+(./DOC2.tex (/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-06-12-16:01
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks14
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/usepackage.4ht)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen103
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count89
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count90
+\leftroot@=\count91
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count92
+\DOTSCASE@=\count93
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
+\dotsspace@=\muskip10
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
+\tag@help=\toks18
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
+\andhelp@=\toks19
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 99.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+
+(/usr/share/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+(/usr/share/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2018/09/14 v3.5c French support from the babel system
+
+(/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count101
+\U@D=\dimen114
+
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count102
+)
+\l@acadian = a dialect from \language\l@french 
+\FB@nonchar=\count103
+Package babel Info: Making : an active character on input line 414.
+Package babel Info: Making ; an active character on input line 415.
+Package babel Info: Making ! an active character on input line 416.
+Package babel Info: Making ? an active character on input line 417.
+\FBguill@level=\count104
+\FBold@everypar=\toks23
+\FB@Mht=\dimen115
+\mc@charclass=\count105
+\mc@charfam=\count106
+\mc@charslot=\count107
+\std@mcc=\count108
+\dec@mcc=\count109
+\c@FBcaption@count=\count110
+\listindentFB=\dimen116
+\descindentFB=\dimen117
+\labelindentFB=\dimen118
+\labelwidthFB=\dimen119
+\leftmarginFB=\dimen120
+\parindentFFN=\dimen121
+\FBfnindent=\dimen122
+))
+(/usr/share/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count111
+\Gm@cntv=\count112
+\c@Gm@tempcnt=\count113
+\Gm@bindingoffset=\dimen123
+\Gm@wd@mp=\dimen124
+\Gm@odd@mp=\dimen125
+\Gm@even@mp=\dimen126
+\Gm@layoutwidth=\dimen127
+\Gm@layoutheight=\dimen128
+\Gm@layouthoffset=\dimen129
+\Gm@layoutvoffset=\dimen130
+\Gm@dimlist=\toks24
+) (./foo.cfg
+(/usr/share/texmf-dist/tex/generic/tex4ht/tex4ht.4ht
+version 2018-06-12-16:03
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+--------------------------------------
+--- Note --- For MathML on MSIE + MathPlayer use the command line option `mathp
+layer'
+--------------------------------------
+) (/usr/share/texmf-dist/tex/generic/tex4ht/tex4ht.sty
+version 2018-06-12-16:01
+
+--- needs --- tex4ht DOC2 ---
+\tmp:cnt=\count114
+\openout15 = `DOC2.tmp'.
+
+(./DOC2.tmp)
+\tmp:dim=\skip46
+ (./DOC2.xref)
+\:refout=\write3
+\openout3 = `DOC2.xref'.
+
+ (/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+) (/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: html,xhtml,mathml,NoFonts,ext=htm,charset="utf-8"
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht)
+\:tokwrite=\toks25
+\:tokpage=\toks26
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `DOC2.4ct'.
+
+\:tocout=\write4
+\openout4 = `DOC2.4tc'.
+
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht)
+(/usr/share/texmf-dist/tex/generic/tex4ht/latex.4ht
+version 2018-08-30-15:28
+LaTeX Info: Redefining \_ on input line 168.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/fontmath.4ht
+version 2018-11-06-15:55
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+\tmp:bx=\box28
+ [1
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 1381.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1381.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2] [3] [4] [5] [6] [7]
+[8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22]
+[23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
+[38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
+--------------------------------------
+--- Note --- for sources failing to produce clean mathml code, try the command 
+line option `mathml-'
+--------------------------------------
+ [49] [50] [51] [52]
+[53]) (/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/book.4ht
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/inputenc.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/amsmath.4ht
+version 2018-11-24-13:50
+\tmp:muskip=\muskip11
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/amstext.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/amsbsy.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/amsopn.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/amssymb.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+ [54] [55] [56] [57]
+[58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72]
+[73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87]
+[88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100] [101]
+[102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113]
+[114] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125]
+[126] [127] [128] [129] [130] [131] [132] [133] [134] [135] [136] [137]
+[138] [139] [140] [141] [142] [143] [144] [145] [146] [147] [148] [149]
+[150] [151] [152] [153] [154] [155] [156] [157] [158] [159] [160] [161]
+[162] [163] [164] [165] [166] [167] [168] [169] [170] [171] [172] [173]
+[174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184] [185]
+[186] [187] [188] [189] [190] [191] [192] [193] [194] [195] [196] [197]
+[198] [199] [200] [201] [202] [203] [204] [205] [206] [207] [208] [209]
+[210] [211] [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
+[222] [223] [224] [225] [226] [227] [228] [229] [230] [231] [232] [233]
+[234] [235] [236] [237] [238] [239] [240] [241] [242] [243] [244] [245]
+[246] [247] [248] [249] [250] [251] [252] [253] [254] [255] [256] [257])
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/graphicx.4ht
+version 2018-10-01-14:24
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/graphics.4ht
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for key dimensions try the option `Gin-dim'; for key dimensions wh
+en bounding box is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/dvips.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/babel.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/french.4ht
+version 2009-05-21-09:32
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/geometry.4ht
+version 2016-07-01-08:55
+
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht))
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4.4ht
+version 2018-11-29-15:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/unicode.4ht
+version 2018-09-02-14:29
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/mathml.4ht
+version 2018-04-10-14:34
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html-mml.4ht
+version 2018-02-23-15:42
+)
+(/usr/share/texmf-dist/tex/generic/tex4ht/html4-uni.4ht)) (./DOC2.aux)
+\openout1 = `DOC2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Info: Redefining \degres on input line 2.
+
+
+Package french.ldf Warning: Figures' and tables' captions might look like
+(french.ldf)                `Figure 1:' in French instead of `Figure 1 :'.
+(french.ldf)                If it happens, see your class documentation to
+(french.ldf)                fix this issue or add AFTER babel/french
+(french.ldf)                \usepackage[labelsep=period]{caption} or
+(french.ldf)                \usepackage[labelsep=endash]{caption} or
+(french.ldf)                or ... live with it; reported on input line 2.
+
+LaTeX Info: Redefining \dots on input line 2.
+LaTeX Info: Redefining \up on input line 2.
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-47.23828pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+--- file DOC2.css ---
+) [1] [2
+
+] [3]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 20.
+ (/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/it' in size <14.4> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 20.
+ [1]
+l. 47 --- needs --- figures/hyper37.png ---
+ [2] [3]
+[4
+
+] [1] [2
+
+] [3] [4]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 62.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [5]
+[6
+
+] (./DOC2.4ct [7] [8]
+LaTeX Font Info:    Try loading font information for U+euf on input line 128.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[9]) [10] [1
+
+] [2
+
+] [3] [4] [5] [6
+
+]
+Chapitre 1.
+[7] [8]
+Chapitre 2.
+(./DOC2.4ct)
+--- file DOC22.html ---
+ [9
+
+
+] (./DOC2.4ct)
+--- file DOC23.html ---
+ [10
+
+] [11] [12
+
+]
+Chapitre 3.
+(./DOC2.4ct)
+--- file DOC24.html ---
+ [13
+
+] (./DOC2.4ct) (./DOC2.4ct) [14] [15]
+l. 283 --- needs --- figures/euc1.png ---
+ [16]
+l. 303 --- needs --- figures/euc1.png ---
+ [17] [18] [19]
+[20] [21] [22
+
+]
+Chapitre 4.
+(./DOC2.4ct)
+--- file DOC25.html ---
+ [23
+
+] (./DOC2.4ct)
+--- file DOC26.html ---
+ [24
+
+]
+--- file DOC27.html ---
+ [25
+
+] [26] (./DOC2.4ct)
+l. 536 --- needs --- figures/neuc.png ---
+--- file DOC28.html ---
+ [27
+
+]
+l. 559 --- needs --- figures/neuc.png ---
+--- file DOC29.html ---
+ [28
+
+]
+(./DOC2.4ct)
+l. 602 --- needs --- figures/peint.png ---
+l. 619 --- needs --- figures/peint.png ---
+ [29] [30] (./DOC2.4ct)
+--- file DOC210.html ---
+ [31
+
+] [32]
+Chapitre 5.
+(./DOC2.4ct) [33
+
+]
+l. 726 --- needs --- figures/posid.png ---
+l. 750 --- needs --- figures/proclus.png ---
+ [34] (./DOC2.4ct)
+l. 769 --- needs --- figures/ALJAHW2.png ---
+--- file DOC211.html ---
+ [35
+
+] [36] [37] (./DOC2.4ct)
+l. 866 --- needs --- figures/WAL1.png ---
+ [38]
+--- file DOC212.html ---
+l. 884 --- needs --- figures/sac.png ---
+l. 911 --- needs --- figures/sacc2002.png ---
+ [39
+
+]
+[40]
+--- file DOC213.html ---
+ [41
+
+]
+l. 967 --- needs --- figures/Leg1.png ---
+--- file DOC214.html ---
+ [42
+
+]
+Chapitre 6.
+(./DOC2.4ct) (./DOC2.4ct) [43
+
+] (./DOC2.4ct) [44] (./DOC2.4ct) (./DOC2.4ct)
+[45] [46
+
+]
+Chapitre 7.
+(./DOC2.4ct) [47] (./DOC2.4ct) [48]
+--- file DOC215.html ---
+l. 1162 --- needs --- figures/poinc.png ---
+ [49
+
+]
+l. 1177 --- needs --- figures/poinc1.png ---
+l. 1199 --- needs --- figures/lobat50.png ---
+ [50] [51] [52]
+Chapitre 8.
+[53
+
+] [54
+
+] [55] [56] [57] [58
+
+]
+Chapitre 9.
+[59] [60
+
+]
+Chapitre 10.
+(./DOC2.4ct) [61] [62] [63] (./DOC2.4ct)
+l. 1475 --- needs --- figures/Postulat5.png ---
+ [64] (./DOC2.4ct) (./DOC2.4ct)
+[65]
+l. 1549 --- needs --- figures/th1.png ---
+l. 1570 --- needs --- figures/th2.png ---
+ [66]
+l. 1585 --- needs --- figures/LIVRE1&4.png ---
+l. 1622 --- needs --- figures/th7.png ---
+ [67]
+l. 1632 --- needs --- figures/euc.png ---
+l. 1637 --- needs --- figures/euc2.png ---
+l. 1647 --- needs --- figures/th11.png ---
+l. 1656 --- needs --- figures/th14.png ---
+ [68]
+l. 1685 --- needs --- figures/LIVRE1&16.png ---
+ [69]
+l. 1700 --- needs --- figures/th18.png ---
+ [70]
+l. 1727 --- needs --- figures/th21.png ---
+ [71]
+l. 1756 --- needs --- figures/LIVRE1&23.png ---
+l. 1760 --- needs --- figures/th24.png ---
+ [72]
+l. 1782 --- needs --- figures/th27.png ---
+ [73]
+l. 1803 --- needs --- figures/LIVRE1&28.png ---
+l. 1813 --- needs --- figures/th29.png ---
+l. 1829 --- needs --- figures/th30.png ---
+ [74]
+l. 1847 --- needs --- figures/th31.png ---
+l. 1856 --- needs --- figures/th32.png ---
+ [75] [76]
+Chapitre 11.
+(./DOC2.4ct)
+l. 1935 --- needs --- figures/coordonneespheriques.png ---
+ [77
+
+]
+l. 1951 --- needs --- figures/coordonneespheriques1.png ---
+ [78]
+l. 1984 --- needs --- figures/sphre2.png ---
+l. 1994 --- needs --- figures/sphre1.png ---
+ (./DOC2.4ct) [79]
+l. 2039 --- needs --- figures/sphre5ter.png ---
+ [80] [81] (./DOC2.4ct)
+l. 2084 --- needs --- figures/sphre6.png ---
+ [82]
+l. 2094 --- needs --- figures/demi-sphere2bis.png ---
+l. 2110 --- needs --- figures/demi-sphre2ter.png ---
+ [83]
+[84]
+Chapitre 12.
+l. 2157 --- needs --- figures/posi6.png ---
+l. 2175 --- needs --- figures/posi1.png ---
+[85
+
+] [86
+
+]
+Chapitre 13.
+(./DOC2.4ct)
+l. 2209 --- needs --- figures/ALJAHW5.png ---
+l. 2221 --- needs --- figures/ALJAHW6.png ---
+ [87] [88] (./DOC2.4ct)
+l. 2243 --- needs --- figures/JAHWA3.png ---
+l. 2252 --- needs --- figures/JAHWA4.png ---
+ [89] [90
+
+]
+Chapitre 14.
+(./DOC2.4ct)
+l. 2281 --- needs --- figures/KHAYYAM.png ---
+--- file DOC216.html ---
+l. 2289 --- needs --- figures/KHAYYAM.png ---
+l. 2311 --- needs --- figures/KHAYYAM1.png ---
+ [91
+
+]
+l. 2338 --- needs --- figures/KHAYYAM3.png ---
+l. 2355 --- needs --- figures/KHAYYAM2.png ---
+ [92] [93] [94]
+Chapitre 15.
+(./DOC2.4ct)
+l. 2392 --- needs --- figures/WALLIS1.png ---
+l. 2404 --- needs --- figures/WALLIS2.png ---
+ [95
+
+] (./DOC2.4ct)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2422.
+l. 2428 --- needs --- figures/WALLIS3.png ---
+ [96]
+l. 2439 --- needs --- figures/WALLIS4.png ---
+ [97]
+l. 2470 --- needs --- figures/WALLIS5.png ---
+l. 2477 --- needs --- figures/WALLIS6.png ---
+ [98]
+l. 2485 --- needs --- figures/WALLIS7.png ---
+ [99] [100
+
+]
+Chapitre 16.
+--- file DOC217.html ---
+[101
+
+] (./DOC2.4ct)
+l. 2516 --- needs --- figures/sacc1.png ---
+l. 2535 --- needs --- figures/sacc3.png ---
+l. 2544 --- needs --- figures/sacc6.png ---
+ [102]
+l. 2568 --- needs --- figures/sacc7.png ---
+ (./DOC2.4ct) (./DOC2.4ct) [103]
+l. 2614 --- needs --- figures/saccheri1.png ---
+l. 2626 --- needs --- figures/saccheri2.png ---
+l. 2635 --- needs --- figures/saccheri3.png ---
+l. 2643 --- needs --- figures/saccheri2bis.png ---
+ [104]
+l. 2653 --- needs --- figures/saccheri4.png ---
+l. 2659 --- needs --- figures/saccheri5.png ---
+l. 2674 --- needs --- figures/saccheri6.png ---
+l. 2678 --- needs --- figures/saccheri6.png ---
+ [105]
+l. 2692 --- needs --- figures/saccheri7.png ---
+ [106]
+l. 2710 --- needs --- figures/saccheri1bis.png ---
+l. 2720 --- needs --- figures/saccheri1ter.png ---
+l. 2728 --- needs --- figures/saccheri1quater.png ---
+l. 2750 --- needs --- figures/sccH1a.png ---
+
+[107]
+l. 2788 --- needs --- figures/saccH1b.png ---
+ [108] [109] (./DOC2.4ct)
+l. 2816 --- needs --- figures/sacc132.png ---
+ [110]
+l. 2827 --- needs --- figures/sacc133.png ---
+ [111]
+l. 2855 --- needs --- figures/sacc134.png ---
+ [112]
+l. 2876 --- needs --- figures/sacc137bis.png ---
+l. 2887 --- needs --- figures/sacc137.png ---
+ [113]
+l. 2910 --- needs --- figures/sacc137ter.png ---
+ [114]
+l. 2924 --- needs --- figures/sacc170.png ---
+l. 2932 --- needs --- figures/sacc170bis.png ---
+l. 2942 --- needs --- figures/sacc170ter.png ---
+l. 2961 --- needs --- figures/sacc231.png ---
+ [115]
+l. 2975 --- needs --- figures/sacc240.png ---
+l. 2991 --- needs --- figures/sacc233BIS.png ---
+l. 3000 --- needs --- figures/sacc233BIS.png ---
+ [116]
+[117]
+l. 3020 --- needs --- figures/sacc150.png ---
+l. 3043 --- needs --- figures/saccH2c.png ---
+ [118]
+l. 3081 --- needs --- figures/sacc11.png ---
+l. 3093 --- needs --- figures/sacc12.png ---
+l. 3100 --- needs --- figures/sacc12.png ---
+l. 3110 --- needs --- figures/sacc14.png ---
+ [119]
+l. 3126 --- needs --- figures/saccH1b.png ---
+ [120] [121]
+l. 3189 --- needs --- figures/sacc20.png ---
+ [122]
+l. 3229 --- needs --- figures/sacc20.png ---
+ [123] [124]
+l. 3320 --- needs --- figures/sacc21bis.png ---
+l. 3332 --- needs --- figures/sacc21.png ---
+l. 3350 --- needs --- figures/sacc22.png ---
+ [125]
+l. 3360 --- needs --- figures/sacc23.png ---
+ [126]
+l. 3390 --- needs --- figures/sacc24.png ---
+ [127]
+l. 3433 --- needs --- figures/sacc41.png ---
+ [128]
+[129] (./DOC2.4ct)
+l. 3468 --- needs --- figures/sccH1a.png ---
+ [130] [131] [132
+
+]
+Chapitre 17.
+(./DOC2.4ct)
+l. 3503 --- needs --- figures/Lambert1.png ---
+l. 3518 --- needs --- figures/Lambert2.png ---
+ [133] (./DOC2.4ct)
+l. 3540 --- needs --- figures/lambert10.png ---
+l. 3564 --- needs --- figures/lambert10.png ---
+ [134] (./DOC2.4ct)
+l. 3577 --- needs --- figures/Lambert1.png ---
+l. 3594 --- needs --- figures/Lambert3.png ---
+ [135]
+l. 3615 --- needs --- figures/Lambert4.png ---
+l. 3642 --- needs --- figures/Lambert5.png ---
+ [136]
+Chapitre 18.
+l. 3666 --- needs --- figures/Legendre1.png ---
+l. 3684 --- needs --- figures/Legendre2.png ---
+[137
+
+]
+l. 3705 --- needs --- figures/Legendre1.png ---
+ [138]
+l. 3748 --- needs --- figures/Legendre1.png ---
+ [139] [140]
+Chapitre 19.
+l. 3783 --- needs --- figures/Lobat1.png ---
+(./DOC2.4ct)
+l. 3796 --- needs --- figures/Lobat3.png ---
+ [141
+
+]
+l. 3806 --- needs --- figures/Lobat4.png ---
+l. 3824 --- needs --- figures/Lobat5.png ---
+l. 3833 --- needs --- figures/Lobat1.png ---
+ [142]
+l. 3843 --- needs --- figures/Lobat6.png ---
+l. 3859 --- needs --- figures/Lobat7.png ---
+l. 3875 --- needs --- figures/Lobat8.png ---
+ [143]
+l. 3924 --- needs --- figures/Lobat8bis.png ---
+ [144]
+l. 3938 --- needs --- figures/Lobat50.png ---
+l. 3957 --- needs --- figures/Lobat51.png ---
+l. 3969 --- needs --- figures/Lobat9.png ---
+ [145] [146]
+l. 3989 --- needs --- figures/Lobat10.png ---
+l. 3995 --- needs --- figures/Lobat10bis.png ---
+l. 4001 --- needs --- figures/Lobat11.png ---
+ (./DOC2.4ct) [147]
+l. 4017 --- needs --- figures/Lobat12.png ---
+l. 4023 --- needs --- figures/Lobat13.png ---
+l. 4036 --- needs --- figures/Lobat14.png ---
+l. 4051 --- needs --- figures/Lobat15.png ---
+ [148]
+l. 4078 --- needs --- figures/Lobat16.png ---
+l. 4086 --- needs --- figures/Lobat17.png ---
+l. 4095 --- needs --- figures/Lobat18.png ---
+l. 4112 --- needs --- figures/Lobat19.png ---
+l. 4119 --- needs --- figures/Lobat20.png ---
+
+[149]
+l. 4128 --- needs --- figures/Lobat20bis.png ---
+l. 4142 --- needs --- figures/Lobat21.png ---
+ [150]
+l. 4180 --- needs --- figures/Lobat23.png ---
+l. 4185 --- needs --- figures/Lobat24.png ---
+ [151]
+l. 4209 --- needs --- figures/Lobat25.png ---
+ [152]
+l. 4236 --- needs --- figures/Lobat26.png ---
+l. 4249 --- needs --- figures/Lobat27.png ---
+l. 4262 --- needs --- figures/Lobat28.png ---
+l. 4270 --- needs --- figures/Lobat29.png ---
+ [153]
+l. 4281 --- needs --- figures/Lobat30.png ---
+l. 4292 --- needs --- figures/Lobat31.png ---
+ [154] [155
+
+] [156] [157] [158
+
+]
+Chapitre 20.
+[159] [160]
+Chapitre 21.
+(./DOC2.4ct) [161
+
+] [162] [163] [164] [165] [166] [167] [168] [169] [170]
+(./DOC2.4ct) [171] [172]
+l. 4626 --- needs --- figures/mobius2.png ---
+ [173]
+l. 4635 --- needs --- figures/mobius3.png ---
+l. 4646 --- needs --- figures/mobius4.png ---
+ [174] [175] [176]
+Chapitre 22.
+(./DOC2.4ct) [177
+
+] [178] [179] [180] [181] [182] [183] [184] [185] (./DOC2.4ct) [186] [187] [188
+] [189] [190] [191] [192] [193] [194] (./DOC2.4ct)
+l. 5041 --- needs --- figures/poin1.png ---
+ (./DOC2.4ct) [195] (./DOC2.4ct) [196]
+Chapitre 23.
+(./DOC2.4ct) [197
+
+] [198] [199] [200] [201] [202] [203] [204] [205] (./DOC2.4ct) [206] [207] (./D
+OC2.4ct) [208]
+l. 5287 --- needs --- figures/hyper1.png ---
+ [209]
+l. 5311 --- needs --- figures/hyper2.png ---
+ [210] [211]
+l. 5357 --- needs --- figures/hyper3.png ---
+ [212] [213] [214] [215]
+l. 5430 --- needs --- figures/hyper5.png ---
+
+[216] [217] [218] [219] [220]
+Chapitre 24.
+(./DOC2.4ct)
+l. 5506 --- needs --- figures/hyper114.png ---
+l. 5513 --- needs --- figures/hyper115.png ---
+ (./DOC2.4ct) [221
+
+]
+l. 5535 --- needs --- figures/hyper8.png ---
+ [222]
+l. 5550 --- needs --- figures/hyper8.png ---
+l. 5560 --- needs --- figures/hyper11.png ---
+l. 5574 --- needs --- figures/hyper12.png ---
+ [223]
+l. 5581 --- needs --- figures/Hyper9.png ---
+l. 5594 --- needs --- figures/Hyper10.png ---
+l. 5599 --- needs --- figures/Hyper10.png ---
+l. 5612 --- needs --- figures/hyper13.png ---
+ [224]
+l. 5626 --- needs --- figures/hyper111.png ---
+l. 5635 --- needs --- figures/hyper112.png ---
+l. 5643 --- needs --- figures/hyper16.png ---
+ [225]
+l. 5655 --- needs --- figures/hyper116.png ---
+ [226]
+l. 5677 --- needs --- figures/hyper18.png ---
+l. 5693 --- needs --- figures/hyper14.png ---
+l. 5695 --- needs --- figures/hyper15.png ---
+ [227]
+l. 5725 --- needs --- figures/hyper20.png ---
+l. 5731 --- needs --- figures/hyper21.png ---
+ [228]
+[229]
+l. 5761 --- needs --- figures/hyper24bis.png ---
+l. 5777 --- needs --- figures/hyper24.png ---
+ [230] [231]
+l. 5812 --- needs --- figures/hyper26.png ---
+l. 5818 --- needs --- figures/hyper22.png ---
+l. 5830 --- needs --- figures/hyper22.png ---
+l. 5836 --- needs --- figures/hyper27.png ---
+ [232] [233] (./DOC2.4ct)
+l. 5869 --- needs --- figures/hyper6.png ---
+ [234] [235]
+l. 5907 --- needs --- figures/hyper7.png ---
+ [236] [237] [238]
+[239] [240] [241] (./DOC2.4ct)
+l. 6013 --- needs --- figures/bis1.png ---
+ [242] [243]
+l. 6032 --- needs --- figures/hyper38.png ---
+l. 6046 --- needs --- figures/hyper38bis.png ---
+l. 6054 --- needs --- figures/hyper38ter.png ---
+ [244] [245]
+l. 6085 --- needs --- figures/bis2.png ---
+l. 6089 --- needs --- figures/bis3.png ---
+l. 6094 --- needs --- figures/bis4.png ---
+l. 6099 --- needs --- figures/bis5.png ---
+ [246]
+l. 6145 --- needs --- figures/hyper43.png ---
+ [247]
+l. 6184 --- needs --- figures/hyper41.png ---
+ (./DOC2.4ct) [248] [249] [250] [251]
+l. 6284 --- needs --- figures/isom6.png ---
+ [252]
+l. 6305 --- needs --- figures/isom7.png ---
+ [253]
+l. 6327 --- needs --- figures/isom21.png ---
+l. 6343 --- needs --- figures/isom22.png ---
+ [254]
+l. 6380 --- needs --- figures/isom23.png ---
+ [255]
+l. 6409 --- needs --- figures/isom25.png ---
+ [256]
+l. 6446 --- needs --- figures/isom26.png ---
+ [257] [258] [259]
+[260] [261] (./DOC2.4ct)
+l. 6551 --- needs --- figures/lob2.png ---
+ [262]
+l. 6584 --- needs --- figures/lob1.png ---
+l. 6597 --- needs --- figures/Lobat3bis.png ---
+l. 6605 --- needs --- figures/lob4.png ---
+ [263]
+l. 6636 --- needs --- figures/lob5.png ---
+ [264] (./DOC2.4ct [265
+
+] [266] [267])
+[268] (./DOC2.aux) ) 
+Here is how much of TeX's memory you used:
+ 9950 strings out of 492640
+ 132286 string characters out of 6135522
+ 334913 words of memory out of 5000000
+ 13188 multiletter control sequences out of 15000+600000
+ 27250 words of font info for 77 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,16n,37p,2326b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on DOC2.dvi (542 pages, 2349788 bytes).
